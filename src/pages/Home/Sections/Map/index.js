@@ -1,14 +1,16 @@
 import { Fragment } from "react";
+import PropTypes from "prop-types";
 
 import "leaflet/dist/leaflet.css";
 import "leaflet-area-select";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-export function Map() {
+export function Map({ location }) {
+  console.log(location, "**");
   return (
     <Fragment>
       <MapContainer
-        center={[53.483, -2.244]}
+        center={location}
         zoom={13}
         scrollWheelZoom={false}
         style={{ height: "100vh" }}
@@ -21,3 +23,11 @@ export function Map() {
     </Fragment>
   );
 }
+
+Map.defaultProps = {
+  location: [53.483, -2.244],
+};
+
+Map.propTypes = {
+  location: PropTypes.array.isRequired,
+};
