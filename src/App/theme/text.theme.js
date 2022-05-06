@@ -1,8 +1,6 @@
 export const textTheme = {
   color: {
     default: "#000",
-    primary: "#ece4db",
-    secondary: "#7c606b",
     caption: "#757575",
     error: "#ef233c",
   },
