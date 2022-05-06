@@ -1,4 +1,4 @@
-import { Text } from "components/UI";
+import { Text, Button } from "components/UI";
 import { Section, Input, Info, Details } from "./styles";
 
 export function Controls() {
@@ -8,7 +8,7 @@ export function Controls() {
       <Info>
         <Text>To select the area on the map, Hold the control button.</Text>
       </Info>
-      <button>Get geo details</button>
+      <Button>Get geo details</Button>
       <Details>
         <Text>Details section.</Text>
       </Details>
