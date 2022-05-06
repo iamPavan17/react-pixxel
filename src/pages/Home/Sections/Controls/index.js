@@ -4,7 +4,7 @@ import { usePlacesWidget } from "react-google-autocomplete";
 import PropTypes from "prop-types";
 
 import { GOOGLE_API_KEY } from "constants";
-import { Text, Button } from "components/UI";
+import { Text } from "components/UI";
 import { Section, Input, Info, Details } from "./styles";
 
 export function Controls({ handleLocation, selectedAreaLocation }) {

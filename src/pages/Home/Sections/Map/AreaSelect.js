@@ -30,6 +30,7 @@ export default function AreaSelect({ handleSelectedAreaLocation }) {
 
     // now switch it off
     map.selectArea.setValidate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return null;
