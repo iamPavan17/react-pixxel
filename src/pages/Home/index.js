@@ -1,11 +1,11 @@
 import { Map, Controls } from "./Sections";
-import { Section } from "./styles";
+import { Main } from "./styles";
 
 export default function Home() {
   return (
-    <Section>
+    <Main>
       <Map />
       <Controls />
-    </Section>
+    </Main>
   );
 }

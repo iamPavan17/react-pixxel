@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const Section = styled.section`
+const Main = styled.main`
   display: grid;
   grid-template-columns: 70fr 30fr;
 `;
 
-export { Section };
+export { Main };
