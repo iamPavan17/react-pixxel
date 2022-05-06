@@ -12,6 +12,7 @@ export default function Home() {
   };
 
   const handleSelectedAreaLocation = (data) => {
+    localStorage.setItem("selectedAreaLocation", JSON.stringify(data));
     setSelectedAreaLocation(data);
   };
 
