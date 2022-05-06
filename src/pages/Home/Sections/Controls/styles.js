@@ -6,6 +6,19 @@ const Section = styled.section`
   gap: 1.6rem;
   padding: 3rem 1.8rem;
   border-bottom: 1px solid #ccc;
+
+  .heading {
+    margin-top: 1.6rem;
+  }
+
+  .heading:after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid #ccc;
+    width: 26%;
+    margin: 0 auto;
+    padding-top: 0.6rem;
+  }
 `;
 
 const Input = styled.input`

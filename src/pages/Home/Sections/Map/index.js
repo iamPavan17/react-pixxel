@@ -5,9 +5,11 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-area-select";
 import { MapContainer, TileLayer } from "react-leaflet";
 
+import AreaSelect from "./AreaSelect";
+
 const ZOOM = 13;
 
-export function Map({ location }) {
+export function Map({ location, handleSelectedAreaLocation }) {
   const mapRef = useRef();
 
   // Updating the map on location change
@@ -32,6 +34,8 @@ export function Map({ location }) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+
+        <AreaSelect handleSelectedAreaLocation={handleSelectedAreaLocation} />
       </MapContainer>
     </Fragment>
   );
@@ -43,4 +47,5 @@ Map.defaultProps = {
 
 Map.propTypes = {
   location: PropTypes.array.isRequired,
+  handleSelectedAreaLocation: PropTypes.func.isRequired,
 };
